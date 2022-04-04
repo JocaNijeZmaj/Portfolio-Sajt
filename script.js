@@ -1,6 +1,9 @@
-const toggler = document.getElementsByClassName('toggler')[0]
-const navI = document.getElementsByClassName('nav_item')[0]
+const toggler = document.querySelector('.toggler')
+const navI = document.querySelectorAll('.nav_item')
+
 
 toggler.addEventListener ('click', () => {
-    navI.classList.toggle('active')
+    navI.forEach(el => {
+        el.classList.toggle('active')
+    })
 })
