@@ -96,10 +96,10 @@ transform: rotate(0);
   
 }
 .toggler .bar{
- height: 7px;
- width: 100%;
- background-color: rgb(20, 20, 20);
- border-radius: 8px;
+  height: 7px;
+  width: 100%;
+  background-color: rgb(20, 20, 20);
+  border-radius: 8px;
 }
 
 /* Main */
@@ -152,7 +152,7 @@ transform: rotate(0);
 }
 .OM_item {
   font-size: 1.3rem;
-  width: 600px;
+  width: 50%;
   margin-left: 1rem;
   margin-right: 1rem;
   padding-right: 2rem;
@@ -180,8 +180,13 @@ transform: rotate(0);
   border-radius: 10px;
   border-style: dashed;
   padding: 1rem;
+  margin: 1rem;
   animation: transitionIn 3s;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
+
 
 /* Kompetencije i vestine */
 .komp {
@@ -201,6 +206,7 @@ transform: rotate(0);
   padding: 1rem;
   border-radius: 1rem;
   list-style: none;
+  margin: 1rem;
 }
 .komp_2 {
   display: flex;
@@ -281,6 +287,30 @@ img {
   }
   .nav_item.active {
     display: flex; 
+  }
+  .OM_item {
+    width: auto;
+  }
+  .t1 {   
+    z-index: -1;
+    top: 29rem;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    padding-right: 2rem;
+  }
+  .s1{
+    justify-content: center;
+  }
+  .s2{
+    height: 200px;
+  }
+  .slika2 {
+    width: 300px;
+  }
+  .MJP {
+    padding: 4px;
+    margin: 4pdx;
+    gap: 4px;
   }
 }
 
