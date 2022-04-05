@@ -293,13 +293,14 @@ img {
   }
   .t1 {   
     z-index: -1;
-    top: 29rem;
+    top: 20rem;
     padding-left: 2rem;
     margin-bottom: 1rem;
     padding-right: 2rem;
   }
   .s1{
     justify-content: center;
+    position: relative;
   }
   .s2{
     height: 200px;
