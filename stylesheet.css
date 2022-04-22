@@ -14,11 +14,12 @@
   --f1: 3rem;
   --f2: 2.25rem;
   --f3: 1.2rem;
+  scroll-behavior: smooth;
 }
 body {
   line-height: 1.6;
   margin: 0 auto;
-  max-width: 1800px;
+  max-width: 1750px;
 }
 
 
@@ -65,7 +66,7 @@ transform: rotate(0);
   gap: 1rem;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   list-style: none;
   padding: 0;
   background-color: var(--boja-2);
@@ -74,7 +75,7 @@ transform: rotate(0);
   margin-bottom: 3rem;
 }
 .nav_item {
-  width: 100%;
+  
   font-weight: bolder;
   font-size: var(--f3);
   text-transform: uppercase;
@@ -103,7 +104,6 @@ transform: rotate(0);
 }
 
 /* Main */
-
 .main {
   display: grid;
   gap: 1rem;
@@ -149,6 +149,8 @@ transform: rotate(0);
   gap: 10px 30px;
   padding: 1rem;
   animation: transitionIn 2s;
+  background-color: #aaaa;
+  border-radius: 1rem;
 }
 .OM_item {
   font-size: 1.3rem;
@@ -179,10 +181,13 @@ transform: rotate(0);
   border-color: var(--boja-2);
   border-radius: 10px;
   border-style: dashed;
+  background-color: #aaaa;
   padding: 1rem;
   margin: 1rem;
   animation: transitionIn 3s;
   display: flex;
+  align-items: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   gap: 1rem;
 }
@@ -265,6 +270,11 @@ button:hover {
 img {
   border-radius: 15px;
 }
+a.active,
+a:hover {
+    transition: 0.5s;
+    color: var(--boja-4);
+  }
 
 /* Responsive */
 
@@ -322,11 +332,16 @@ img {
   }
 }
 
-@media only screen and (min-width: 600px) {
-
-  a.active,
-  a:hover {
-    transition: 0.5s;
-    color: var(--boja-4);
+@media only screen and (min-width: 1500px) {
+  .t2 {
+  width: 37ch;
+  animation: typing 1.5s steps(37);
+  white-space: nowrap;
+  overflow: hidden;
+}
+@keyframes typing {
+    from {
+      width: 0
   }
+}
 }
