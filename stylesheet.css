@@ -293,7 +293,7 @@ a:hover {
     justify-content: center;
   }
   .nav_list {
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-around;
   flex-direction: column;
   width: 100%;
