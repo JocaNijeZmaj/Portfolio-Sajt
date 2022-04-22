@@ -1,0 +1,44 @@
+#new-todo-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#new-todo-form > * {
+  margin: .15rem;
+}
+
+#list {
+  padding: 0;
+}
+
+.list-item {
+  list-style: none;
+}
+
+.list-item-label:hover,
+[data-list-item-checkbox]:hover {
+  cursor: pointer;
+}
+
+.list-item-label:hover > [data-list-item-text] {
+  color: #333;
+  text-decoration: line-through;
+}
+
+[data-list-item-checkbox]:checked ~ [data-list-item-text] {
+  text-decoration: line-through;
+  color: #AAA;
+}
+
+[data-button-delete] {
+  margin-left: .5rem;
+}
+
+button {
+  cursor: pointer;
+}
+body{
+background: rgb(7,35,75);
+background: radial-gradient(circle, rgba(7,35,75,1) 0%, rgba(255,255,255,1) 0%, rgba(255,255,255,0.38139005602240894) 13%, rgba(55,207,255,0.5550595238095238) 32%);
+font-family:Verdana, Geneva, Tahoma, sans-serif
+}
