@@ -4,13 +4,19 @@
   box-sizing: border-box;
 }
 body{
-    background:linear-gradient(to right,#7171e0, #b3c8d6);
+      background:linear-gradient(to right,#7171e0, #b3c8d6);
+}
+#label{
+    font-size: 2rem;
+    margin-left: 40%;
+}
+main{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .piano{
-    margin-top: 20%;
+    margin-top: 15%;
     display: flex;
     justify-content: center;
     background-color: black;
