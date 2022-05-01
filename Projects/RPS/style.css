@@ -1,0 +1,40 @@
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+}
+button{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transform: 100ms;
+    border: none;
+    
+}
+#rock{
+    background: url('the-rock.jpeg') no-repeat;   
+}
+#paper{
+    background: url('paper.jpg') no-repeat;  
+}
+#scissors{
+    background: url('scissors.png') no-repeat;  
+}
+section{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.button:hover{
+    transform: scale(1.2);
+}
+p{
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: green; 
+}
