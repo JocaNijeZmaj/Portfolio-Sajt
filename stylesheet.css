@@ -185,12 +185,27 @@ transform: rotate(0);
   padding: 1rem;
   margin: 1rem;
   animation: transitionIn 3s;
+  list-style: none;
+  font-size: var(--f3);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+  
+.MJP li{
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 1rem;
 }
+
 
 
 /* Kompetencije i vestine */
@@ -326,10 +341,9 @@ a:hover {
     width: 300px;
   }
   .MJP {
-    padding: 4px;
-    margin: 4pdx;
-    gap: 4px;
-  }
+  display: grid;
+  grid-template-columns: 1fr;
+}
 }
 
 @media only screen and (min-width: 1500px) {
