@@ -104,11 +104,7 @@ transform: rotate(0);
 }
 
 /* Main */
-.main {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 1fr;
-}
+
 
 .slika {
   display: flex;
@@ -178,32 +174,26 @@ transform: rotate(0);
 /* Moji projekti */
 
 .MJP {
+  margin: 1rem;
+  animation: transitionIn 3s;
+  list-style: none;
+  
+} 
+.MJP li{
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  gap: 1rem;
   border-color: var(--boja-2);
   border-radius: 10px;
   border-style: dashed;
   background-color: #aaaa;
-  padding: 1rem;
-  margin: 1rem;
-  animation: transitionIn 3s;
-  list-style: none;
   font-size: var(--f3);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 2rem;
-  align-items: center;
-  justify-content: center;
-
-}
-
-
-  
-.MJP li{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 1rem;
+  margin: 2rem;
+  text-align: center;
 }
 
 

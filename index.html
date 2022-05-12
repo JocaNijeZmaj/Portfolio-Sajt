@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Glider/glider.min.css">
     <link rel="stylesheat" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    <title>Moj Portfolio</title>
+    <script src="Glider/glider.min.js"></script>
     <script src="script.js" defer></script>
+    <title>Moj Portfolio</title>
 </head>
 <body>
     <!-- Navigacija -->
@@ -34,7 +36,7 @@
 
     <!-- O meni -->
 
-<div class="main">
+<div class="Sve">
     <div class="slika">
         <div class="s1"><img src="images/127624090_695791484677489_8424288949582458274_n.jpg" width="300px">
         <h1 class="t1">Jovan Jovanović</h1>
@@ -54,13 +56,18 @@
     <!-- Moji Projekti -->
     
     <h1 class="naslov" id="projekti">Moji Projekti</h1>
-        <ul class="MJP">
+    <div class="glider-contain">
+        <ul class="MJP glider">
             <li>Aplikacija za dodavanje i praćenje zadatka koja takođe čuva napisane zadatke u internoj memoriji, napravljena korišćenjem manipulacije DOM objekata i Event-ova. <a href="Projects/Todo List/index.html"><img class="slika2" src="images/Todo.png" width="300px" height="200px"></a></li>
             <li>Digitalni mali klavir koji vam omogućava da svirate preko tastature, aplikacija je napravljena u vanila javascriptu korišćenjem eventova i principa OOP.<a href="Projects/Piano/index.html"><img class="slika2" src="images/Piano.png" width="300px" height="200px"></a></li>
             <li>Potpuno funkcionalan kalkulator napravljen javascriptom korišćenjem osnovnih matematičkih funkcija ugrađenih u samom javascriptu kao i principa enkapsulacije i nasleđivanja.<a href="Projects/Calculator/index.html"><img class="slika2" src="images/Kalkulator.png" width="300px" height="200px" ></a></li>
             <li>Klasična igra memorija sa slikama mojim omiljenim bendovima napravljena isklucivo u javascriptu manipulacijom DOM objekata da realizuje elemente na HTML stranici. <a href="Projects/memory game/index.html"><img class="slika2" src="images/Memory game.png" width="300px" height="200px"></a> </li>
             <li>Papir,Kamen,Makaze izuzetno prosta aplikacija napravljena iz zabave, korišćenjem osnova javascripta.<a href="Projects/RPS/index.html"><img class="slika2" src="images/RPS.jpg" width="300px" height="200px"></a></li>
         </ul> 
+        <button aria-label="Previous" class="glider-prev">«</button>
+        <button aria-label="Next" class="glider-next">»</button>
+        <div role="tablist" class="dots"></div>
+    </div>
 
     <!-- Kompetencije i vestine-->
 
