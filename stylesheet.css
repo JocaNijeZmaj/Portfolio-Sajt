@@ -174,6 +174,7 @@ transform: rotate(0);
 /* Moji projekti */
 
 .MJP {
+  padding: 0;
   margin: 1rem;
   animation: transitionIn 3s;
   list-style: none;
@@ -329,9 +330,6 @@ a:hover {
   }
   .slika2 {
     width: 300px;
-  }
-  .MJP{
-    padding: 0;
   }
   .MJP li{
     margin: 1rem;
