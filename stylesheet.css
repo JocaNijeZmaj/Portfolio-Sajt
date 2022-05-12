@@ -364,3 +364,50 @@ a:hover {
   }
 }
 }
+@keyframes Vugla {
+    from{
+        transform: rotate-Z(0) translateY(0);
+        
+    }
+    to{
+        transform: rotateZ(-30deg) translateY(0.5rem);
+    }
+}
+@keyframes Kockica{
+    from{
+        transform: rotate-Z(0) translateY(0);
+        
+    }
+    to{
+        transform: rotateZ(360deg) translateY(1rem);
+    }
+}
+@keyframes TextNaEkranu{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+#Glava{
+    animation: Vugla 2s infinite linear alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#Kocke1{
+    animation: Kockica 10s infinite linear alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#Kocke2{
+    animation: Vugla 2s infinite linear alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#Tekst2{
+    animation: TextNaEkranu 3s infinite alternate;
+}
+#Tekst{
+    animation: TextNaEkranu 5s infinite alternate;
+}
+svg{
+  margin: 1rem;
+  max-width: 600px;
+}
