@@ -3,8 +3,10 @@ const navI = document.querySelectorAll(".nav_item");
 
 toggler.addEventListener("click", () => {
   navI.forEach((el) => {
-    el.classList.toggle("active");
-  });
+    el.classList.toggle('active')
+    if (el.classList != 'nav_item active')
+    el.classList.toggle('hide')
+    });
 });
 
 new Glider(document.querySelector(".glider"), {
