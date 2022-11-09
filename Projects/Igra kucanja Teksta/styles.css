@@ -1,0 +1,112 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('https://raw.githubusercontent.com/FoxyStoat/memory-game/master/assets/img/ignasi_pattern_s.png');
+    font-family: 'Noto Sans Mono', monospace;
+}
+main {
+    height: 70%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 0.6rem;
+    background: rgb(0,10,36);
+    background: linear-gradient(360deg, rgba(0,10,36,1) 0%, rgba(84,84,191,1) 0%, rgba(0,212,255,1) 100%);
+}
+#game-text {
+    animation: transitionIn 1s ease ;
+}
+#game-text button {
+    padding: 0.5rem;
+    background: rgb(70, 70, 85);
+    color: aliceblue;
+    border-radius: 10px;
+    margin: 3rem;
+}
+#timer {
+    font-size: 3rem;
+}
+.text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.letter { 
+    color: rgb(168, 168, 230);
+    font-size: 5rem;
+}
+.letter:nth-child(2n) { 
+    color: rgb(12, 12, 12); 
+}
+#input-text {
+    background-color: transparent;
+    border-color: black;
+    width: 50%;
+    height: 5%;
+    font-size: 2rem;
+    border-radius: 0.7rem;
+    padding: 0.5rem;
+    color: black;
+    border-style: dashed;
+    animation: transitionIn 1s ease ;
+}
+.intro {
+    position: relative;
+    font-weight: 900;
+    font-size: 3.3em;
+}
+.intro .intro-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+.intro .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+.good {
+    color: rgb(90, 90, 90);
+}
+.bad {
+    color: rgb(216, 42, 42);
+}
+@keyframes transitionIn {
+  from {
+opacity: 0;
+transform: rotate(-10deg);
+  }
+  to {
+opacity: 1;
+transform: rotate(0);
+  }
+}
+
+@media only screen and (max-width: 900px){
+
+    main {
+        height: 80%;
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 600px){
+
+    main {
+        height: 100%;
+        width: 100%;
+    }
+}

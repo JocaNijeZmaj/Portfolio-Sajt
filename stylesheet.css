@@ -348,6 +348,19 @@ a:hover {
   .navbar-container {
     display: none;
   }
+
+  .reveal{
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.show{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
 /* Responsive */
 @media only screen and (max-width: 1600px){
   section {
