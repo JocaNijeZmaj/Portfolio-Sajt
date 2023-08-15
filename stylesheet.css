@@ -235,7 +235,7 @@ section {
   background-color: #4e5164;
   filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.3));
   margin: 2rem;
-  max-width: 900px;
+  /* max-width: 900px; */
   padding-bottom: 1rem;
 }
 .proj h2 {
@@ -257,6 +257,9 @@ section {
   text-align: center;
   font-size: 1rem;
   margin: 1rem;
+}
+.page-2 {
+  height:max-content;
 }
 
 /* Kompetencije i vestine */
